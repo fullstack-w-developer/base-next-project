@@ -1,4 +1,5 @@
-import { logRequestedUrl } from "@/helper/utills/services";
+import { mainUrl } from "@/helpers/constants/env-variables";
+import { logRequestedUrl } from "@/helpers/utills/services";
 import _axios from "axios";
 
 const headers = { "Content-Type": "application/json" };

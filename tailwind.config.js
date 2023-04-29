@@ -3,6 +3,12 @@ module.exports = {
     content: ["./src/pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}", "./src/app/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            colors: {
+                main: "#0D6DA6"
+            },
+            fontFamily: {
+
+            },
             aspectRatio: {
                 "6/9": "6 / 9",
                 "60/90": "60 / 90",
