@@ -1,6 +1,5 @@
 import * as Yup from "yup";
 
-
 export const signUpSchema = Yup.object({
     first_name: Yup.string()
         .required("لطفا نام خود را وارد کنید")
@@ -20,7 +19,10 @@ export const signUpSchema = Yup.object({
 
 export const signInSchema = Yup.object({
     student_number: Yup.string().matches(/^\d+$/, "شماره دانشجویی صحیح نیست").required("لطفا شماره دانشجویی خود را وارد کنید"),
-    password: Yup.string().trim().matches(/^[A-Za-z0-9]*$/, "رمز عبور باید شما اعداد و حروف انگلیسی باشد").required("لطفا رمز عبور خود را وارد کنید"),
+    password: Yup.string()
+        .trim()
+        .matches(/^[A-Za-z0-9]*$/, "رمز عبور باید شما اعداد و حروف انگلیسی باشد")
+        .required("لطفا رمز عبور خود را وارد کنید"),
 });
 export const forgetPassSchema = Yup.object({
     email: Yup.string().email("فرمت ایمیل صحیح نیست").required("لطفا ایمیل خود را وارد کنید"),

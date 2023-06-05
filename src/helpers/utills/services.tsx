@@ -8,7 +8,6 @@ const getQuery = (value: any, key: string) => {
     }
 };
 
-
 export const logRequestedUrl = ({ baseURL, method, url }: AxiosRequestConfig) => {
     if (baseURL && inDevEnvironment) {
         const fullUrl = baseURL + url;
@@ -20,9 +19,6 @@ export const logRequestedUrl = ({ baseURL, method, url }: AxiosRequestConfig) =>
         }
     }
 };
-
-
-
 
 export const generateQueries = (queries: QueryParams = {}) => {
     const { page, limit, order, sort, q, ...other } = queries;
@@ -61,7 +57,6 @@ const generateQueryString = <Q extends Object, O extends QueryParams>(queries: Q
 
     return query;
 };
-
 
 const generateArrayQuery = (key: string, value: string) => {
     let query = "";

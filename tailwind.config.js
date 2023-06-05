@@ -4,11 +4,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                main: "#0D6DA6"
+                main: "#0D6DA6",
             },
-            fontFamily: {
-
-            },
+            fontFamily: {},
             aspectRatio: {
                 "6/9": "6 / 9",
                 "60/90": "60 / 90",

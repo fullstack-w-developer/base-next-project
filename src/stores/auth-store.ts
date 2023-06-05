@@ -13,36 +13,40 @@ interface UserStore {
     setAuthLoading: (loading: boolean) => void;
 }
 
-const useAuthStore = create<UserStore>()(devtools(immer((set) => ({
-    user: null,
-    authLoading: false,
-    setUser: ({ user }) => {
-        set(
-            (state) => {
-                state.user = user;
+const useAuthStore = create<UserStore>()(
+    devtools(
+        immer((set) => ({
+            user: null,
+            authLoading: false,
+            setUser: ({ user }) => {
+                set(
+                    (state) => {
+                        state.user = user;
+                    },
+                    false,
+                    "auth-store/set-user"
+                );
             },
-            false,
-            "auth-store/set-user"
-        );
-    },
-    removeUser: () => {
-        set(
-            (state) => {
-                state.user = null;
+            removeUser: () => {
+                set(
+                    (state) => {
+                        state.user = null;
+                    },
+                    false,
+                    "auth-store/remove-user"
+                );
             },
-            false,
-            "auth-store/remove-user"
-        );
-    },
-    setAuthLoading: (loading) => {
-        set(
-            (state) => {
-                state.authLoading = loading;
+            setAuthLoading: (loading) => {
+                set(
+                    (state) => {
+                        state.authLoading = loading;
+                    },
+                    false,
+                    "auth-store/set-auth-loading"
+                );
             },
-            false,
-            "auth-store/set-auth-loading"
-        );
-    },
-}))));
+        }))
+    )
+);
 
 export default useAuthStore;

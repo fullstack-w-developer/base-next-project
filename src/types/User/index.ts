@@ -5,8 +5,8 @@ export type User = {
     email: string;
     student_number: string;
     profile: {
-        url: string
+        url: string;
     };
     status: "waiting" | "success" | "failed";
-    role: "ADMIN" | "USER" | "MASTER"
-}
+    role: "ADMIN" | "USER" | "MASTER";
+};

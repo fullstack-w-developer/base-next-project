@@ -1,3 +1,4 @@
+"use client"
 import axios from "@/services/utils/axios";
 import useAuthStore from "@/stores/auth-store";
 import { useRouter } from "next/router";

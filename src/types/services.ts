@@ -8,7 +8,6 @@ export type ClientOverload = {
     <D, F>(urlAndConfig: ConfigUrlRequired, formatter: (data: D) => F): Promise<F>;
 };
 
-
 export const getRoute = ({ route, query, ...rest }: GetRouteProps) => {
     let url = route;
 
@@ -23,7 +22,6 @@ export const getRoute = ({ route, query, ...rest }: GetRouteProps) => {
 
     return url;
 };
-
 
 export type QueryParams = {
     ids?: number[];

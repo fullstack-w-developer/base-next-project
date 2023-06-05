@@ -3,7 +3,6 @@ export const signInValues = {
     password: "",
 };
 export const signUpValues = {
-
     first_name: "",
     last_name: "",
     email: "",
