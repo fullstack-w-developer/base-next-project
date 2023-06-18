@@ -7,6 +7,16 @@ module.exports = {
                 main: "#0D6DA6",
             },
             fontFamily: {},
+            backgroundColor: {
+                sku: "#096EA4",
+            },
+            fontFamily: {
+                ExtraBold: "ExtraBold",
+                yekanBold: "yekanBold",
+                artinBlack: "artin_black",
+                artinBold: "artin_bold",
+                artinLight: "artin_light",
+            },
             aspectRatio: {
                 "6/9": "6 / 9",
                 "60/90": "60 / 90",

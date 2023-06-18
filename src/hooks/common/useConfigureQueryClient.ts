@@ -1,7 +1,7 @@
-"use client"
-import { inDevEnvironment } from "@/helpers/constants/env-variables";
+import { inDevEnvironment } from "../../helpers/constants/env-variables";
 import { useState } from "react";
 import { QueryClient } from "react-query";
+
 const useConfigureQueryClient = () => {
     const [queryClient] = useState(
         () =>

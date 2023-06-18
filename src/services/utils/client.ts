@@ -1,6 +1,5 @@
-import { ConfigUrlRequired } from "@/types/services";
-import { ClientOverload } from "@/types/services";
-import axios from "@/services/utils/axios";
+import axios from "./axios";
+import { ClientOverload, ConfigUrlRequired } from "../../types/services";
 import { AxiosResponse } from "axios";
 
 const client: ClientOverload = async <D, F>(

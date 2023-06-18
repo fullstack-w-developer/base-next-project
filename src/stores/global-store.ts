@@ -2,8 +2,15 @@ import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 import { devtools } from "zustand/middleware";
 
-interface GlobalStore {}
 
-const useGlobalStore = create<GlobalStore>()(devtools(immer((set) => ({}))));
 
-export default useGlobalStore;
+
+
+const useGlobalStroe = create<any>()(
+    devtools(
+        immer((set) => ({
+        }))
+    )
+);
+
+export default useGlobalStroe;
