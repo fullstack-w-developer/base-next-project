@@ -50,7 +50,7 @@ const useVerifyAuth = () => {
             delete axios.defaults.headers.common["Authorization"];
             removeCookies("token", { path: "/" });
             removeCookies("jwt", { path: "/" });
-            removeUser();
+            // removeUser();
         }
     }, [cookies.token, cookies.jwt]);
 };
